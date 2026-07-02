@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italianno&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @font-face {
+            font-family: "Love";
+            src: url("fontes/love\ larry\ ttf.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat
+                - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat ratione repellendus, laboriosam voluptatibus corrupti veritatis nisi non consequatur delectus explicabo, quam, numquam voluptatem consectetur maxime recusandae mollitia praesentium quisquam.</p>
+</body>
+</html>
