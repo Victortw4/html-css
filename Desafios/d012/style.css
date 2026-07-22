@@ -3,41 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-body {
+* {
     margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     background-color: #000;
     color: #fff;
-
-    font-family: "Passion One", cursive;
-
-    min-height: 290px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     text-align: center;
 }
 
 header h1 {
-    font-size: 8em;
-    margin: 0;
+    padding-top: 50px;
+    font-size: 10vw;
+    font-variant: small-caps;
+    font-family: "Passion One", cursive;
 }
 
 header p {
+    padding-bottom: 50px;
     font-weight: normal;
     font-size: 20px;
-    margin: 0;
-    
 }
 
 a {
     text-decoration: none;
-    font-weight: 400;
+    font-weight: bolder;
     color: #fff;
 }
 
@@ -47,36 +44,35 @@ a:hover {
 
 main {
     font-family: "Sriracha", cursive;
-    font-size: 3.3em;
+    font-size: 3.5vw;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
     line-height: 2em;
 }
 
-section.estrofe {
-    padding: 20px;
-}
-
-section#e1 > p {
-    white-space: pre-line;
+section > p {
+    padding-bottom: 2em;
 }
 
 section#e2 {
-    background: url(imagens/background001.jpg) center center no-repeat fixed;
+    background: url(imagens/background001.jpg) right center no-repeat fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.43);
 }
 
 section#e2 > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.541);
-    white-space: pre-line;
     display: inline-block;
     padding: 5px;
 }
 
-section#e3 > p {
-    white-space: pre-line;
-}
-
 section#e4 {
     background: url(imagens/background002.jpg) center center no-repeat fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
 }
 
 section#e4 > p {
@@ -84,11 +80,6 @@ section#e4 > p {
     background-color: rgba(0, 0, 0, 0.474);
     display: inline-block;
     padding: 5px;
-    white-space: pre-line;
-}
-
-section#e5 > p {
-    white-space: pre-line;
 }
 
 footer {
